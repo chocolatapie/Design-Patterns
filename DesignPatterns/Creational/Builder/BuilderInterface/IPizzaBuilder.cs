@@ -7,5 +7,9 @@
         void InitializeIngredients();
 
         void InitializeAdditionInfo();
+
+        void ReInitializeBuilder();
+
+        Pizza GetPreparedPizza();
     }
 }

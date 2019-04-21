@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Creational.FactoryMethod;
+﻿using DesignPatterns.Creational.Builder;
+using DesignPatterns.Creational.FactoryMethod;
 using DesignPatterns.Creational.Singleton;
 using System;
 
@@ -28,15 +29,15 @@ namespace DesignPatterns
             //------------------------------------------------------------
 
             //-------------------Builder----------------------------------
-
-
+            //Pizzeria pizzeria = new Pizzeria();
+            //Pizza margarita = pizzeria.MakePizza("Margarita");
+            //Console.WriteLine("This is "+margarita.Name + " pizza.");
+            //Console.WriteLine("It has " + margarita.Price + " UAH price.");
+            //Console.WriteLine("It weights " + margarita.Weight + " gramms.");
+            //Console.WriteLine();
             //------------------------------------------------------------
             #endregion
-
-
-
-
-
+            
             Console.ReadLine();
         }
     }

@@ -8,35 +8,42 @@ namespace DesignPatterns.Creational.Builder.Builders
 
         public DominosBuilder()
         {
-            _reInitializeBuilder();
+            ReInitializeBuilder();
         }
         
-        private void _reInitializeBuilder()
+        public void ReInitializeBuilder()
         {
             this._pizza = null;
             this._pizza = new Pizza();
         }
 
-        public Pizza GetPizza()
+        public Pizza GetPreparedPizza()
         {
             Pizza resultPizza = this._pizza;
-            this._reInitializeBuilder();
             return resultPizza;
         }
 
         public void InitializeAdditionInfo()
         {
-            throw new System.NotImplementedException();
+            this._pizza.IsSpicy = true;
+            this._pizza.IsVegetarian = false;
         }
 
         public void InitializeIngredients()
         {
-            throw new System.NotImplementedException();
+            this._pizza.HasCheese = false;
+            this._pizza.HasMilkySauce = false;
+            this._pizza.HasPaperoni = true;
+            this._pizza.HasTomatoSauce = true;
+            this._pizza.HasMushrooms = true;
         }
 
         public void InitializeMetricInfo()
         {
-            throw new System.NotImplementedException();
+            this._pizza.Name = "Dominos";
+            this._pizza.Price = 77;
+            this._pizza.Size = 120;
+            this._pizza.Weight = 500;
         }
     }
 }
