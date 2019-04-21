@@ -8,24 +8,30 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            #region Creational
             //-------------------Factory Method---------------------------
-            FactoriesExecutor factoriesExecutor = new FactoriesExecutor();
-            factoriesExecutor.ProduceCars();
-            foreach(IAutomobile auto in factoriesExecutor.Automobiles)
-            {
-                Console.WriteLine(auto.GetInfoThisAuto());
-            }
-            Console.WriteLine();
+            //FactoriesExecutor factoriesExecutor = new FactoriesExecutor();
+            //factoriesExecutor.ProduceCars();
+            //foreach(IAutomobile auto in factoriesExecutor.Automobiles)
+            //{
+            //    Console.WriteLine(auto.GetInfoThisAuto());
+            //}
+            //Console.WriteLine();
             //------------------------------------------------------------
 
             //-------------------Singletone-------------------------------
-            Universe uniwerse1 = Universe.GetUniverse();
-            Universe uniwerse2 = Universe.GetUniverse();
-            uniwerse1.WaitForHumanity();
-            uniwerse2.WaitForHumanity();
-            Console.WriteLine();
+            //Universe uniwerse1 = Universe.GetUniverse();
+            //Universe uniwerse2 = Universe.GetUniverse();
+            //uniwerse1.WaitForHumanity();
+            //uniwerse2.WaitForHumanity();
+            //Console.WriteLine();
             //------------------------------------------------------------
 
+            //-------------------Builder----------------------------------
+
+
+            //------------------------------------------------------------
+            #endregion
 
 
 

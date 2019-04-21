@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Builder\Builders\DominosBuilder.cs" />
+    <Compile Include="Creational\Builder\BuilderInterface\IPizzaBuilder.cs" />
+    <Compile Include="Creational\Builder\Builders\MargaritaBuilder.cs" />
+    <Compile Include="Creational\Builder\Builders\PaperoniBuilder.cs" />
+    <Compile Include="Creational\Builder\Pizza.cs" />
+    <Compile Include="Creational\Builder\Pizzeria.cs" />
     <Compile Include="Creational\FactoryMethod\Autos\Camry.cs" />
     <Compile Include="Creational\FactoryMethod\Autos\Passat.cs" />
     <Compile Include="Creational\FactoryMethod\FactoriesExecutor.cs" />
@@ -68,7 +74,6 @@
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\AbstractFactory\" />
-    <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
