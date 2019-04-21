@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Creational.FactoryMethod;
+using System;
 
 namespace DesignPatterns
 {
@@ -10,6 +7,23 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            //-------------------Factory Method---------------------------
+            FactoriesExecutor factoriesExecutor = new FactoriesExecutor();
+            factoriesExecutor.ProduceCars();
+            foreach(IAutomobile auto in factoriesExecutor.Automobiles)
+            {
+                Console.WriteLine(auto.GetInfoThisAuto());
+            }
+            //------------------------------------------------------------
+
+
+
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }

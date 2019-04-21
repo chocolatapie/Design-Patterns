@@ -42,6 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\FactoryMethod\Autos\Camry.cs" />
+    <Compile Include="Creational\FactoryMethod\Autos\Passat.cs" />
+    <Compile Include="Creational\FactoryMethod\FactoriesExecutor.cs" />
+    <Compile Include="Creational\FactoryMethod\IAutomobile.cs" />
+    <Compile Include="Creational\FactoryMethod\Manufacturers\AbstractManufacturer.cs" />
+    <Compile Include="Creational\FactoryMethod\Manufacturers\ToyotaManufacturer.cs" />
+    <Compile Include="Creational\FactoryMethod\Manufacturers\VWManufacturer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,7 +68,6 @@
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\AbstractFactory\" />
     <Folder Include="Creational\Builder\" />
-    <Folder Include="Creational\FactoryMethod\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Creational\Singleton\" />
     <Folder Include="Structural\Adapter\" />
