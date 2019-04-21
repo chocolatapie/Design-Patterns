@@ -24,7 +24,10 @@ namespace DesignPatterns.Creational.FactoryMethod.Autos
 
         public void Ride(int miles)
         {
-            this.СarMileage += miles;
+            if(miles > 0)
+            {
+                this.СarMileage += miles;
+            }
         }
     }
 }
