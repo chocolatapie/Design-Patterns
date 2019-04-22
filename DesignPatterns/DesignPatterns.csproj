@@ -59,6 +59,7 @@
     <Compile Include="Creational\Prototype\Models\Cohort.cs" />
     <Compile Include="Creational\Prototype\Models\Legion.cs" />
     <Compile Include="Creational\Prototype\Models\Legionare.cs" />
+    <Compile Include="Creational\Prototype\RomanArmy.cs" />
     <Compile Include="Creational\Singleton\Universe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
