@@ -13,14 +13,14 @@ namespace DesignPatterns
             //-------------------Factory Method---------------------------
             //FactoriesExecutor factoriesExecutor = new FactoriesExecutor();
             //factoriesExecutor.ProduceCars();
-            //foreach(IAutomobile auto in factoriesExecutor.Automobiles)
+            //foreach (IAutomobile auto in factoriesExecutor.Automobiles)
             //{
             //    Console.WriteLine(auto.GetInfoThisAuto());
             //}
             //Console.WriteLine();
             //------------------------------------------------------------
 
-            //-------------------Singletone-------------------------------
+            //-------------------Singleton--------------------------------
             //Universe uniwerse1 = Universe.GetUniverse();
             //Universe uniwerse2 = Universe.GetUniverse();
             //uniwerse1.WaitForHumanity();
@@ -36,8 +36,16 @@ namespace DesignPatterns
             //Console.WriteLine("It weights " + margarita.Weight + " gramms.");
             //Console.WriteLine();
             //------------------------------------------------------------
+
+            //-------------------Prototype--------------------------------
+
+            //------------------------------------------------------------
+
+            //-------------------Abstract Factory-------------------------
+
+            //------------------------------------------------------------
             #endregion
-            
+
             Console.ReadLine();
         }
     }

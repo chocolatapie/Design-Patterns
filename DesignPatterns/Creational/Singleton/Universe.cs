@@ -7,14 +7,14 @@ namespace DesignPatterns.Creational.Singleton
     {
         private bool IsHumanityExist;
         private static Universe _universe;
-        private static object syncRoot = new Object();
+        private static readonly object _syncRoot = new Object();
 
         private Universe()
         { }
 
         public static Universe GetUniverse()
         {
-            lock (syncRoot)
+            lock (_syncRoot)
             {
                 if (_universe == null)
                 {
