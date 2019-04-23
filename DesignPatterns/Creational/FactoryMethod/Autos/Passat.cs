@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.Creational.FactoryMethod.Autos
+﻿namespace DesignPatterns.Creational.FactoryMethod.Autos
 {
     class Passat : IAutomobile
     {

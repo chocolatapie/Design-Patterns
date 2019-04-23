@@ -8,6 +8,10 @@ namespace DesignPatterns.Creational.Builder
         private IPizzaBuilder _firstBuilder;
         private IPizzaBuilder _secondBuilder;
         private IPizzaBuilder _thirdBuilder;
+        private static string _firstPizzaName = "Paperoni";
+        private static string _secondPizzaName = "Dominos";
+        private static string _thirdPizzaName = "Margarita";
+
 
         public Pizzeria()
         {
@@ -19,7 +23,7 @@ namespace DesignPatterns.Creational.Builder
         public Pizza MakePizza(string pizzaRequest)
         {
             Pizza newPizza = null;
-            if(pizzaRequest == "Paperoni")
+            if(pizzaRequest == _firstPizzaName)
             {
                 _firstBuilder.InitializeIngredients();
                 _firstBuilder.InitializeMetricInfo();
@@ -27,7 +31,7 @@ namespace DesignPatterns.Creational.Builder
                  newPizza = _firstBuilder.GetPreparedPizza();
                 _firstBuilder.ReInitializeBuilder();
             }
-            if (pizzaRequest == "Dominos")
+            if (pizzaRequest == _secondPizzaName)
             {
                 _secondBuilder.InitializeIngredients();
                 _secondBuilder.InitializeMetricInfo();
@@ -35,7 +39,7 @@ namespace DesignPatterns.Creational.Builder
                  newPizza = _secondBuilder.GetPreparedPizza();
                 _secondBuilder.ReInitializeBuilder();
             }
-            if (pizzaRequest == "Margarita")
+            if (pizzaRequest == _thirdPizzaName)
             {
                 _thirdBuilder.InitializeIngredients();
                 _thirdBuilder.InitializeMetricInfo();

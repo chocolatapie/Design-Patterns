@@ -55,6 +55,11 @@
     <Compile Include="Creational\FactoryMethod\Manufacturers\AbstractManufacturer.cs" />
     <Compile Include="Creational\FactoryMethod\Manufacturers\ToyotaManufacturer.cs" />
     <Compile Include="Creational\FactoryMethod\Manufacturers\VWManufacturer.cs" />
+    <Compile Include="Creational\Prototype\Interface\ICloneable.cs" />
+    <Compile Include="Creational\Prototype\Models\Cohort.cs" />
+    <Compile Include="Creational\Prototype\Models\Legion.cs" />
+    <Compile Include="Creational\Prototype\Models\Legionare.cs" />
+    <Compile Include="Creational\Prototype\RomanArmy.cs" />
     <Compile Include="Creational\Singleton\Universe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,7 +79,6 @@
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\AbstractFactory\" />
-    <Folder Include="Creational\Prototype\" />
     <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Composite\" />
