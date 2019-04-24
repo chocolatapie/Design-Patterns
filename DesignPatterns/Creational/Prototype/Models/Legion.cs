@@ -9,6 +9,11 @@ namespace DesignPatterns.Creational.Prototype.Models
 
         public List<Cohort> LegionsCohorts { get; set; }
 
+        public Legion()
+        {
+            LegionsCohorts = new List<Cohort>();
+        }
+
         private Legion _createLegionClone()
         {
             Legion cloneLegion = new Legion();
