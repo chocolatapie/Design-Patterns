@@ -42,6 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\AbstractPlanesFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\ConcretePlaneInterfaces\ICivilPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\ConcretePlaneInterfaces\IMilitaryPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\IPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\AirBus360.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\B52.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\Boeing747.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\F16.cs" />
     <Compile Include="Creational\Builder\Builders\DominosBuilder.cs" />
     <Compile Include="Creational\Builder\BuilderInterface\IPizzaBuilder.cs" />
     <Compile Include="Creational\Builder\Builders\MargaritaBuilder.cs" />
@@ -78,7 +89,6 @@
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
-    <Folder Include="Creational\AbstractFactory\" />
     <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Composite\" />

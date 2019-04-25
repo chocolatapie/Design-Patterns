@@ -4,6 +4,9 @@ using DesignPatterns.Creational.Prototype;
 using DesignPatterns.Creational.Prototype.Models;
 using DesignPatterns.Creational.Singleton;
 using System;
+using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.AbstractFactory.Factories;
+using DesignPatterns.Creational.AbstractFactory.Interfaces;
 
 namespace DesignPatterns
 {
@@ -82,7 +85,26 @@ namespace DesignPatterns
 
             # region Abstract Factory
             //-------------------Abstract Factory-------------------------
-
+            AirBusFactory factory1 = new AirBusFactory();
+            BoeingFactory factory2 = new BoeingFactory();
+            AircraftCarrier aircraft1 = new AircraftCarrier(factory1);
+            AircraftCarrier aircraft2 = new AircraftCarrier(factory2);
+            aircraft1.AddMilitaryPlane();
+            aircraft1.AddMilitaryPlane();
+            aircraft1.AddMilitaryPlane();
+            aircraft2.AddCivilPlane();
+            aircraft2.AddCivilPlane();
+            aircraft2.AddCivilPlane();
+            Console.WriteLine("FirstCarrier has: ");
+            foreach (IPlane plane in aircraft1.CarriedPlanes)
+            {
+                Console.WriteLine(plane.GetType().Name);
+            }
+            Console.WriteLine("SecondCarrier has: ");
+            foreach (IPlane plane in aircraft2.CarriedPlanes)
+            {
+                Console.WriteLine(plane.GetType().Name);
+            }
             //------------------------------------------------------------
             #endregion
             #endregion
