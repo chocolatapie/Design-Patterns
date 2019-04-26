@@ -79,6 +79,14 @@
     <Compile Include="Structural\Adapter\Plugs\EuroChargingPlug.cs" />
     <Compile Include="Structural\Adapter\Plugs\EuroToAmericanSocetAdapter.cs" />
     <Compile Include="Structural\Adapter\Interfaces\IAmericanPlug.cs" />
+    <Compile Include="Structural\Facade\ATM.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IATM.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IATMHardvareDirector.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IBankMessageReciever.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IBankMessageSender.cs" />
+    <Compile Include="Structural\Facade\Subsystems\ATMHardvare.cs" />
+    <Compile Include="Structural\Facade\Subsystems\BankMessageSender.cs" />
+    <Compile Include="Structural\Facade\Subsystems\BankMessgeReciever.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -97,7 +105,6 @@
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Composite\" />
     <Folder Include="Structural\Decorator\" />
-    <Folder Include="Structural\Facade\" />
     <Folder Include="Structural\Flyweight\" />
     <Folder Include="Structural\Proxy\" />
   </ItemGroup>

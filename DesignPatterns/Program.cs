@@ -9,6 +9,9 @@ using DesignPatterns.Creational.AbstractFactory.Factories;
 using DesignPatterns.Creational.AbstractFactory.Interfaces;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Adapter.Plugs;
+using DesignPatterns.Structural.Facade;
+using DesignPatterns.Structural.Facade.Interfaces;
+using DesignPatterns.Structural.Facade.Subsystems;
 
 namespace DesignPatterns
 {
@@ -168,8 +171,12 @@ namespace DesignPatterns
             #region Facade
             //-------------------Facade-----------------------------------
 
-
-            //Console.WriteLine();
+            IATMHardvareDirector hardvareDir = new ATMHardvare();
+            IBankMessageReciever reciever = new BankMessgeReciever();
+            IBankMessageSender sender = new BankMessageSender();
+            ATM atm = new ATM(hardvareDir, reciever, sender);
+            atm.GiveClientMoney();
+            Console.WriteLine();
 
             //------------------------------------------------------------
             #endregion
