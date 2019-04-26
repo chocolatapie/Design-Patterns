@@ -92,6 +92,10 @@
     <Compile Include="Structural\Facade\Subsystems\ATMHardvare.cs" />
     <Compile Include="Structural\Facade\Subsystems\BankMessageSender.cs" />
     <Compile Include="Structural\Facade\Subsystems\BankMessgeReciever.cs" />
+    <Compile Include="Structural\Proxy\Interfaces\IStorageService.cs" />
+    <Compile Include="Structural\Proxy\Models\ModelObject.cs" />
+    <Compile Include="Structural\Proxy\Services\ProxyService.cs" />
+    <Compile Include="Structural\Proxy\Services\TimeConsumingStorageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -110,7 +114,6 @@
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Decorator\" />
     <Folder Include="Structural\Flyweight\" />
-    <Folder Include="Structural\Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
