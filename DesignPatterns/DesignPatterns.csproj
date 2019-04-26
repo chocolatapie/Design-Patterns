@@ -79,6 +79,11 @@
     <Compile Include="Structural\Adapter\Plugs\EuroChargingPlug.cs" />
     <Compile Include="Structural\Adapter\Plugs\EuroToAmericanSocetAdapter.cs" />
     <Compile Include="Structural\Adapter\Interfaces\IAmericanPlug.cs" />
+    <Compile Include="Structural\Composite\Interfaces\IBox.cs" />
+    <Compile Include="Structural\Composite\Interfaces\IProduct.cs" />
+    <Compile Include="Structural\Composite\Models\Box.cs" />
+    <Compile Include="Structural\Composite\Models\Product.cs" />
+    <Compile Include="Structural\Composite\Order.cs" />
     <Compile Include="Structural\Facade\ATM.cs" />
     <Compile Include="Structural\Facade\Interfaces\IATM.cs" />
     <Compile Include="Structural\Facade\Interfaces\IATMHardvareDirector.cs" />
@@ -103,7 +108,6 @@
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Structural\Bridge\" />
-    <Folder Include="Structural\Composite\" />
     <Folder Include="Structural\Decorator\" />
     <Folder Include="Structural\Flyweight\" />
     <Folder Include="Structural\Proxy\" />

@@ -4,11 +4,14 @@ using DesignPatterns.Creational.Prototype;
 using DesignPatterns.Creational.Prototype.Models;
 using DesignPatterns.Creational.Singleton;
 using System;
+using System.Runtime.InteropServices;
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.AbstractFactory.Factories;
 using DesignPatterns.Creational.AbstractFactory.Interfaces;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Adapter.Plugs;
+using DesignPatterns.Structural.Composite;
+using DesignPatterns.Structural.Composite.Models;
 using DesignPatterns.Structural.Facade;
 using DesignPatterns.Structural.Facade.Interfaces;
 using DesignPatterns.Structural.Facade.Subsystems;
@@ -153,7 +156,36 @@ namespace DesignPatterns
             #region Composite
             //-------------------Composite--------------------------------
 
+            //Box MainBox = new Box();
+            //Box InnerBox = new Box();
+            //Box InnerInnerBox = new Box();
 
+            //Product product1 = new Product("firstP",100);
+            //Product product2 = new Product("secondP", 120);
+            //Product product3 = new Product("thirdP", 120);
+            //MainBox.AddProduct(product1);
+            //MainBox.AddProduct(product2);
+            //MainBox.AddProduct(product3);
+            //MainBox.AddBox(InnerBox);
+
+            //Product product11 = new Product("firstP1", 100);
+            //Product product21 = new Product("secondP1", 120);
+            //Product product31 = new Product("thirdP1", 120);
+            //InnerBox.AddProduct(product11);
+            //InnerBox.AddProduct(product21);
+            //InnerBox.AddProduct(product31);
+            //InnerBox.AddBox(InnerInnerBox);
+
+            //Product product111 = new Product("firstP11", 100);
+            //Product product211 = new Product("secondP11", 120);
+            //Product product311 = new Product("thirdP11", 120);
+            //InnerInnerBox.AddProduct(product111);
+            //InnerInnerBox.AddProduct(product211);
+            //InnerInnerBox.AddProduct(product311);
+
+            //Order order = new Order(MainBox);
+            //Console.WriteLine("The total Price of your order is : ");
+            //Console.WriteLine(order.OrderPrice + " dollars");
             //Console.WriteLine();
 
             //------------------------------------------------------------
@@ -171,12 +203,12 @@ namespace DesignPatterns
             #region Facade
             //-------------------Facade-----------------------------------
 
-            IATMHardvareDirector hardvareDir = new ATMHardvare();
-            IBankMessageReciever reciever = new BankMessgeReciever();
-            IBankMessageSender sender = new BankMessageSender();
-            ATM atm = new ATM(hardvareDir, reciever, sender);
-            atm.GiveClientMoney();
-            Console.WriteLine();
+            //IATMHardvareDirector hardvareDir = new ATMHardvare();
+            //IBankMessageReciever reciever = new BankMessgeReciever();
+            //IBankMessageSender sender = new BankMessageSender();
+            //ATM atm = new ATM(hardvareDir, reciever, sender);
+            //atm.GiveClientMoney();
+            //Console.WriteLine();
 
             //------------------------------------------------------------
             #endregion
