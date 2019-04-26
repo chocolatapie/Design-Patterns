@@ -74,6 +74,11 @@
     <Compile Include="Creational\Singleton\Universe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\AmericanSocet.cs" />
+    <Compile Include="Structural\Adapter\Interfaces\IEuroPlug.cs" />
+    <Compile Include="Structural\Adapter\Plugs\EuroChargingPlug.cs" />
+    <Compile Include="Structural\Adapter\Plugs\EuroToAmericanSocetAdapter.cs" />
+    <Compile Include="Structural\Adapter\Interfaces\IAmericanPlug.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -89,7 +94,6 @@
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
-    <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Composite\" />
     <Folder Include="Structural\Decorator\" />

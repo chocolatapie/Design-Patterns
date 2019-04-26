@@ -7,6 +7,8 @@ using System;
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.AbstractFactory.Factories;
 using DesignPatterns.Creational.AbstractFactory.Interfaces;
+using DesignPatterns.Structural.Adapter;
+using DesignPatterns.Structural.Adapter.Plugs;
 
 namespace DesignPatterns
 {
@@ -127,7 +129,10 @@ namespace DesignPatterns
             #region Adapter
             //-------------------Adapter----------------------------------
 
-
+            //AmericanSocet americanSocet = new AmericanSocet();
+            //EuroChargingPlug euroPlug = new EuroChargingPlug();
+            //EuroToAmericanSocetAdapter plugAdapter = new EuroToAmericanSocetAdapter(euroPlug);
+            //americanSocet.ConnectWithAmericanPlug(plugAdapter);
             //Console.WriteLine();
 
             //------------------------------------------------------------
