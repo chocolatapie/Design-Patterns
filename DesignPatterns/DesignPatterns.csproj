@@ -42,6 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\AbstractPlanesFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\ConcretePlaneInterfaces\ICivilPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\ConcretePlaneInterfaces\IMilitaryPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Interfaces\IPlane.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\AirBus360.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\B52.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\Boeing747.cs" />
+    <Compile Include="Creational\AbstractFactory\Products\F16.cs" />
     <Compile Include="Creational\Builder\Builders\DominosBuilder.cs" />
     <Compile Include="Creational\Builder\BuilderInterface\IPizzaBuilder.cs" />
     <Compile Include="Creational\Builder\Builders\MargaritaBuilder.cs" />
@@ -63,6 +74,28 @@
     <Compile Include="Creational\Singleton\Universe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\AmericanSocet.cs" />
+    <Compile Include="Structural\Adapter\Interfaces\IEuroPlug.cs" />
+    <Compile Include="Structural\Adapter\Plugs\EuroChargingPlug.cs" />
+    <Compile Include="Structural\Adapter\Plugs\EuroToAmericanSocetAdapter.cs" />
+    <Compile Include="Structural\Adapter\Interfaces\IAmericanPlug.cs" />
+    <Compile Include="Structural\Composite\Interfaces\IBox.cs" />
+    <Compile Include="Structural\Composite\Interfaces\IProduct.cs" />
+    <Compile Include="Structural\Composite\Models\Box.cs" />
+    <Compile Include="Structural\Composite\Models\Product.cs" />
+    <Compile Include="Structural\Composite\Order.cs" />
+    <Compile Include="Structural\Facade\ATM.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IATM.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IATMHardvareDirector.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IBankMessageReciever.cs" />
+    <Compile Include="Structural\Facade\Interfaces\IBankMessageSender.cs" />
+    <Compile Include="Structural\Facade\Subsystems\ATMHardvare.cs" />
+    <Compile Include="Structural\Facade\Subsystems\BankMessageSender.cs" />
+    <Compile Include="Structural\Facade\Subsystems\BankMessgeReciever.cs" />
+    <Compile Include="Structural\Proxy\Interfaces\IStorageService.cs" />
+    <Compile Include="Structural\Proxy\Models\ModelObject.cs" />
+    <Compile Include="Structural\Proxy\Services\ProxyService.cs" />
+    <Compile Include="Structural\Proxy\Services\TimeConsumingStorageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -78,14 +111,9 @@
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
-    <Folder Include="Creational\AbstractFactory\" />
-    <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
-    <Folder Include="Structural\Composite\" />
     <Folder Include="Structural\Decorator\" />
-    <Folder Include="Structural\Facade\" />
     <Folder Include="Structural\Flyweight\" />
-    <Folder Include="Structural\Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

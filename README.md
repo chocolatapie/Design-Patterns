@@ -1,5 +1,5 @@
 # Design-Patterns
-Implementation of main oop design patterns in C# language
+Implementation of main oop design patterns in C# language. 
 
 ### Creational patterns
 * Factory method
@@ -7,3 +7,24 @@ Implementation of main oop design patterns in C# language
 * Singleton
 * Prototype
 * Abstract factory
+
+### Structural patterns
+* Adapter
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Flyweight
+* Proxy
+
+### Behavioral patterns
+* Chain of Responsibility
+* Command
+* Iterator
+* Mediator
+* Memento
+* Observer
+* State
+* Strategy
+* Template method
+* Visitor
