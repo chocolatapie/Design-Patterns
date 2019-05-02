@@ -15,6 +15,7 @@ using DesignPatterns.Structural.Composite.Models;
 using DesignPatterns.Structural.Facade;
 using DesignPatterns.Structural.Facade.Interfaces;
 using DesignPatterns.Structural.Facade.Subsystems;
+using DesignPatterns.Structural.Proxy.Services;
 
 namespace DesignPatterns
 {
@@ -225,7 +226,12 @@ namespace DesignPatterns
             #region Proxy
             //-------------------Proxy------------------------------------
 
-
+            //TimeConsumingStorageService consumingService = new TimeConsumingStorageService();
+            //ProxyService proxyService = new ProxyService(consumingService);
+            //Console.WriteLine("Recieving object first time:");
+            //Console.WriteLine(proxyService.ReturnAnObjectOnRequest("A").ObjName);
+            //Console.WriteLine("Recieving second time: ");
+            //Console.WriteLine(proxyService.ReturnAnObjectOnRequest("A").ObjName);
             //Console.WriteLine();
 
             //------------------------------------------------------------

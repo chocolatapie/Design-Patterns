@@ -22,7 +22,7 @@ namespace DesignPatterns.Structural.Proxy.Services
             ModelObject returnedObj = null;
             if (_objects != null)
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(3000);
                 foreach (ModelObject modelObject in this._objects)
                 {
                     if (modelObject.ObjName == objName)
