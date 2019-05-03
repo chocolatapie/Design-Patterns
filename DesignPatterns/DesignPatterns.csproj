@@ -84,6 +84,11 @@
     <Compile Include="Structural\Composite\Models\Box.cs" />
     <Compile Include="Structural\Composite\Models\Product.cs" />
     <Compile Include="Structural\Composite\Order.cs" />
+    <Compile Include="Structural\Decorator\ConcreteTypes\HeavyArmoredCharacter.cs" />
+    <Compile Include="Structural\Decorator\ConcreteTypes\PoisonedCharacter.cs" />
+    <Compile Include="Structural\Decorator\Interfaces\ICharacter.cs" />
+    <Compile Include="Structural\Decorator\Interfaces\AbstractCharacterDecorator.cs" />
+    <Compile Include="Structural\Decorator\ConcreteTypes\ConcreteCharacter.cs" />
     <Compile Include="Structural\Facade\ATM.cs" />
     <Compile Include="Structural\Facade\Interfaces\IATM.cs" />
     <Compile Include="Structural\Facade\Interfaces\IATMHardvareDirector.cs" />
@@ -112,7 +117,6 @@
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Structural\Bridge\" />
-    <Folder Include="Structural\Decorator\" />
     <Folder Include="Structural\Flyweight\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,6 +12,7 @@ using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Adapter.Plugs;
 using DesignPatterns.Structural.Composite;
 using DesignPatterns.Structural.Composite.Models;
+using DesignPatterns.Structural.Decorator.ConcreteTypes;
 using DesignPatterns.Structural.Facade;
 using DesignPatterns.Structural.Facade.Interfaces;
 using DesignPatterns.Structural.Facade.Subsystems;
@@ -195,7 +196,15 @@ namespace DesignPatterns
             #region Decorator
             //-------------------Decorator--------------------------------
 
-
+            //Console.WriteLine("I`m JohnSnow and i have following armor: ");
+            //ConcreteCharacter JohnSnow = new ConcreteCharacter(20);
+            //Console.WriteLine(JohnSnow.CharacterBasicArmor);
+            //HeavyArmoredCharacter JonSnowArmored = new HeavyArmoredCharacter(JohnSnow);
+            //Console.WriteLine("Now I have a shield and my total armor is: ");
+            //Console.WriteLine(JonSnowArmored.GetProtectionFromArmor());
+            //Console.WriteLine("God damn it, i was poisoned!");
+            //PoisonedCharacter JohnArmoredAndPoisoned = new PoisonedCharacter(JonSnowArmored);
+            //Console.WriteLine("Current armor is: " + JohnArmoredAndPoisoned.GetProtectionFromArmor());
             //Console.WriteLine();
 
             //------------------------------------------------------------
