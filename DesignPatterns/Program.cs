@@ -5,6 +5,8 @@ using DesignPatterns.Creational.Prototype.Models;
 using DesignPatterns.Creational.Singleton;
 using System;
 using System.Runtime.InteropServices;
+using DesignPatterns.Behavioral.Iterator.Collection;
+using DesignPatterns.Behavioral.Iterator.Iterators;
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.AbstractFactory.Factories;
 using DesignPatterns.Creational.AbstractFactory.Interfaces;
@@ -271,7 +273,30 @@ namespace DesignPatterns
             #region Iterator
             //-------------------Iterator---------------------------------
 
-
+            //Console.WriteLine("Binary tree with custom iterator: ");
+            //CustomBinaryTree tree = new CustomBinaryTree();
+            //tree.AddValue(5);
+            //tree.AddValue(-7);
+            //tree.AddValue(8);
+            //tree.AddValue(-3);
+            //tree.AddValue(-6);
+            //tree.AddValue(45);
+            //tree.AddValue(22);
+            //InOrderIterator iterator = new InOrderIterator(tree.RootNode);
+            //tree.ChangeIterator(iterator);
+            //Console.WriteLine("InOrder Iterator");
+            //foreach (TreeNode node in tree)
+            //{
+            //    Console.WriteLine(node.NodeValue);
+            //}
+            //Console.WriteLine("PreOrder iterator");
+            //PreOrderIterator iterator2 = new PreOrderIterator(tree.RootNode);
+            //tree.ChangeIterator(iterator2);
+            //Console.WriteLine("InOrder Iterator");
+            //foreach (TreeNode node in tree)
+            //{
+            //    Console.WriteLine(node.NodeValue);
+            //}
             //Console.WriteLine();
 
             //------------------------------------------------------------

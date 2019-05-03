@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Iterator\Collection\CustomBinaryTree.cs" />
+    <Compile Include="Behavioral\Iterator\Collection\TreeNode.cs" />
+    <Compile Include="Behavioral\Iterator\Iterators\AbstractIterator.cs" />
+    <Compile Include="Behavioral\Iterator\Iterators\InOrderIterator.cs" />
+    <Compile Include="Behavioral\Iterator\Iterators\PreOrderIterator.cs" />
     <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
@@ -108,7 +113,6 @@
   <ItemGroup>
     <Folder Include="Behavioral\ChainResponsibility\" />
     <Folder Include="Behavioral\Command\" />
-    <Folder Include="Behavioral\Iterator\" />
     <Folder Include="Behavioral\Mediator\" />
     <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Observer\" />
