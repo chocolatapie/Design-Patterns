@@ -1,24 +1,6 @@
-﻿using DesignPatterns.Creational.Builder;
-using DesignPatterns.Creational.FactoryMethod;
-using DesignPatterns.Creational.Prototype;
-using DesignPatterns.Creational.Prototype.Models;
-using DesignPatterns.Creational.Singleton;
-using System;
-using System.Runtime.InteropServices;
-using DesignPatterns.Behavioral.Iterator.Collection;
-using DesignPatterns.Behavioral.Iterator.Iterators;
-using DesignPatterns.Creational.AbstractFactory;
-using DesignPatterns.Creational.AbstractFactory.Factories;
-using DesignPatterns.Creational.AbstractFactory.Interfaces;
-using DesignPatterns.Structural.Adapter;
-using DesignPatterns.Structural.Adapter.Plugs;
-using DesignPatterns.Structural.Composite;
-using DesignPatterns.Structural.Composite.Models;
-using DesignPatterns.Structural.Decorator.ConcreteTypes;
-using DesignPatterns.Structural.Facade;
-using DesignPatterns.Structural.Facade.Interfaces;
-using DesignPatterns.Structural.Facade.Subsystems;
-using DesignPatterns.Structural.Proxy.Services;
+﻿using System;
+using DesignPatterns.Behavioral.ChainResponsibility;
+using DesignPatterns.Behavioral.ChainResponsibility.MedPersonel;
 
 namespace DesignPatterns
 {
@@ -254,7 +236,16 @@ namespace DesignPatterns
 
             #region ChainResponsibility
             //-------------------ChainResponsibility----------------------
+            //Patient MikeWithBrokenLeg = new Patient("Mike","broken leg bone");
+            //Patient BobWithDaltonism = new Patient("Bob", "Daltonism");
 
+            //OrthopedicTraumatologist ortoped = new OrthopedicTraumatologist(null);
+            //Traumatologist traumatolog = new Traumatologist(ortoped);
+            //Therapist therapist = new Therapist(traumatolog);
+            //Nurse nurse = new Nurse(therapist);
+
+            //nurse.TryToCure(MikeWithBrokenLeg.Disease);
+            //nurse.TryToCure(BobWithDaltonism.Disease);
 
             //Console.WriteLine();
 
