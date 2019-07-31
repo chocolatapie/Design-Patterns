@@ -1,6 +1,7 @@
 ﻿using System;
-using DesignPatterns.Behavioral.ChainResponsibility;
-using DesignPatterns.Behavioral.ChainResponsibility.MedPersonel;
+using System.Collections.Generic;
+using System.Linq;
+using DesignPatterns.Behavioral.Memento;
 
 namespace DesignPatterns
 {
@@ -305,9 +306,23 @@ namespace DesignPatterns
             #region Memento
             //-------------------Memento---------------------------------
 
+            //Robot robot = new Robot("stay","stay");
+            //robot.Move("forward","stay");
+            //robot.Move("stay", "forward");
+            //robot.Move("forward", "stay");
+            //robot.Move("stay", "forward");
+            //robot.Move("forward", "stay");
+            //robot.Move("stay", "forward");
+            //robot.Move("forward", "stay");
+            //robot.Move("stay", "forward");
 
-
-
+            //List<RobotMemento> robotStates = robot.RobotStateManager.GetHistory();
+            //for (int i = 0; i < robotStates.Count; i++)
+            //{
+            //    Console.WriteLine((string) ("Step: "+ i + " :: " + 
+            //                                " 1) left leg: " + robotStates[i].GetState().First() +
+            //                                " 2) right leg: " + robotStates[i].GetState().First()));
+            //}
             //Console.WriteLine();
 
             //------------------------------------------------------------

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace DesignPatterns.Behavioral.Memento
 {
@@ -13,17 +14,18 @@ namespace DesignPatterns.Behavioral.Memento
 
         public void Save(string leftLeg, string rightLeg)
         {
-
+            RobotMemento memento = new RobotMemento(leftLeg, rightLeg);
+            RobotMementos.Add(memento);
         }
 
         public RobotMemento GetPreviousState()
         {
-            return null;
+            return RobotMementos.Last();
         }
 
         public List<RobotMemento> GetHistory()
         {
-            return null;
+            return RobotMementos;
         }
     }
 }
