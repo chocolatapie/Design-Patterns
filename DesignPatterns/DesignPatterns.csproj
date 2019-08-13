@@ -42,11 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\ChainResponsibility\ICureProvider.cs" />
+    <Compile Include="Behavioral\ChainResponsibility\MedPersonel\Nurse.cs" />
+    <Compile Include="Behavioral\ChainResponsibility\MedPersonel\OrthopedicTraumatologist.cs" />
+    <Compile Include="Behavioral\ChainResponsibility\MedPersonel\Therapist.cs" />
+    <Compile Include="Behavioral\ChainResponsibility\MedPersonel\Traumatologist.cs" />
+    <Compile Include="Behavioral\ChainResponsibility\Patient.cs" />
     <Compile Include="Behavioral\Iterator\Collection\CustomBinaryTree.cs" />
     <Compile Include="Behavioral\Iterator\Collection\TreeNode.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\AbstractIterator.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\InOrderIterator.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\PreOrderIterator.cs" />
+    <Compile Include="Behavioral\Mediator\ArrivalAirPorts\NYCAirport.cs" />
+    <Compile Include="Behavioral\Mediator\ArrivalAirPorts\RejkjavikAirport.cs" />
+    <Compile Include="Behavioral\Mediator\ArrivalAirPorts\SaoPaoloAirport.cs" />
+    <Compile Include="Behavioral\Mediator\DepartureAirPorts\KievAirport.cs" />
+    <Compile Include="Behavioral\Mediator\DepartureAirPorts\MinskAirport.cs" />
+    <Compile Include="Behavioral\Mediator\DepartureAirPorts\StPetersburgAirport.cs" />
+    <Compile Include="Behavioral\Mediator\HubAirPorts\FranckfurtAirport.cs" />
+    <Compile Include="Behavioral\Memento\Robot.cs" />
+    <Compile Include="Behavioral\Memento\RobotMemento.cs" />
+    <Compile Include="Behavioral\Memento\RobotsStatesManager.cs" />
     <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
@@ -111,10 +127,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral\ChainResponsibility\" />
     <Folder Include="Behavioral\Command\" />
-    <Folder Include="Behavioral\Mediator\" />
-    <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\State\" />
     <Folder Include="Behavioral\Strategy\" />
