@@ -1,7 +1,24 @@
 ﻿namespace DesignPatterns.Behavioral.Mediator.ArrivalAirPorts
 {
-    public class NYCAirport
+    public class NYCAirport : IUsualAirport
     {
-        
+        private IMediatorAirport _hubAirport;
+
+        public string Name { get; set; } = "NYC";
+
+        public void Arrival()
+        {
+            this._hubAirport.Notify(this, "Arrival");
+        }
+
+        public void Departure()
+        {
+            this._hubAirport.Notify(this, "Departure");
+        }
+
+        public void SetMediator(IMediatorAirport mediator)
+        {
+            this._hubAirport = mediator;
+        }
     }
 }

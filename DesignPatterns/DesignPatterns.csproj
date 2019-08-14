@@ -53,13 +53,14 @@
     <Compile Include="Behavioral\Iterator\Iterators\AbstractIterator.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\InOrderIterator.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\PreOrderIterator.cs" />
+    <Compile Include="Behavioral\Mediator\AirportsPair.cs" />
     <Compile Include="Behavioral\Mediator\ArrivalAirPorts\NYCAirport.cs" />
     <Compile Include="Behavioral\Mediator\ArrivalAirPorts\RejkjavikAirport.cs" />
-    <Compile Include="Behavioral\Mediator\ArrivalAirPorts\SaoPaoloAirport.cs" />
     <Compile Include="Behavioral\Mediator\DepartureAirPorts\KievAirport.cs" />
-    <Compile Include="Behavioral\Mediator\DepartureAirPorts\MinskAirport.cs" />
     <Compile Include="Behavioral\Mediator\DepartureAirPorts\StPetersburgAirport.cs" />
     <Compile Include="Behavioral\Mediator\HubAirPorts\FranckfurtAirport.cs" />
+    <Compile Include="Behavioral\Mediator\IMediatorAirport.cs" />
+    <Compile Include="Behavioral\Mediator\IUsualAirport.cs" />
     <Compile Include="Behavioral\Memento\Robot.cs" />
     <Compile Include="Behavioral\Memento\RobotMemento.cs" />
     <Compile Include="Behavioral\Memento\RobotsStatesManager.cs" />

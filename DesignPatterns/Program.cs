@@ -1,4 +1,10 @@
-﻿using System;
+﻿using DesignPatterns.Behavioral.Mediator.ArrivalAirPorts;
+using DesignPatterns.Behavioral.Mediator.DepartureAirPorts;
+using DesignPatterns.Behavioral.Mediator.HubAirPorts;
+using DesignPatterns.Behavioral.Memento;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DesignPatterns
 {
@@ -293,8 +299,18 @@ namespace DesignPatterns
 
             #region Mediator
             //-------------------Mediator---------------------------------
+            //NYCAirport nYCAirport = new NYCAirport();
+            //KievAirport kievAirport = new KievAirport();
 
+            //RejkjavikAirport rejkjavikAirport = new RejkjavikAirport();
+            //StPetersburgAirport stPetersburgAirport = new StPetersburgAirport();
 
+            //FranckfurtAirport francfurtAirport = new FranckfurtAirport();
+            //francfurtAirport.AddAirPortsPair(kievAirport, nYCAirport);
+            //francfurtAirport.AddAirPortsPair(stPetersburgAirport, rejkjavikAirport);
+
+            //kievAirport.Departure();
+            //rejkjavikAirport.Arrival();
             //Console.WriteLine();
 
             //------------------------------------------------------------
@@ -303,8 +319,8 @@ namespace DesignPatterns
             #region Memento
             //-------------------Memento---------------------------------
 
-            //Robot robot = new Robot("stay","stay");
-            //robot.Move("forward","stay");
+            //Robot robot = new Robot("stay", "stay");
+            //robot.Move("forward", "stay");
             //robot.Move("stay", "forward");
             //robot.Move("forward", "stay");
             //robot.Move("stay", "forward");
@@ -316,7 +332,7 @@ namespace DesignPatterns
             //List<RobotMemento> robotStates = robot.RobotStateManager.GetHistory();
             //for (int i = 0; i < robotStates.Count; i++)
             //{
-            //    Console.WriteLine((string) ("Step: "+ i + " :: " + 
+            //    Console.WriteLine((string)("Step: " + i + " :: " +
             //                                " 1) left leg: " + robotStates[i].GetState().First() +
             //                                " 2) right leg: " + robotStates[i].GetState().First()));
             //}
