@@ -64,6 +64,11 @@
     <Compile Include="Behavioral\Memento\Robot.cs" />
     <Compile Include="Behavioral\Memento\RobotMemento.cs" />
     <Compile Include="Behavioral\Memento\RobotsStatesManager.cs" />
+    <Compile Include="Behavioral\Strategy\IMovingStrategy.cs" />
+    <Compile Include="Behavioral\Strategy\Movers\EngineMover.cs" />
+    <Compile Include="Behavioral\Strategy\Movers\OarsMover.cs" />
+    <Compile Include="Behavioral\Strategy\Movers\SailMover.cs" />
+    <Compile Include="Behavioral\Strategy\Vessel.cs" />
     <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
@@ -131,7 +136,6 @@
     <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\State\" />
-    <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Structural\Bridge\" />

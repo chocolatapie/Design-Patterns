@@ -2,6 +2,7 @@
 using DesignPatterns.Behavioral.Mediator.DepartureAirPorts;
 using DesignPatterns.Behavioral.Mediator.HubAirPorts;
 using DesignPatterns.Behavioral.Memento;
+using DesignPatterns.Behavioral.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -362,6 +363,9 @@ namespace DesignPatterns
             #region Strategy
             //-------------------Strategy---------------------------------
 
+            //Vessel yacht = new Vessel("Sails");
+            //yacht.ChangeContext("Oars");
+            //yacht.ChangeContext("Engine");
 
             //Console.WriteLine();
 
