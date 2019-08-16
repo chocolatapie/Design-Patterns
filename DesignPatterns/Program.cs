@@ -2,6 +2,8 @@
 using DesignPatterns.Behavioral.Mediator.DepartureAirPorts;
 using DesignPatterns.Behavioral.Mediator.HubAirPorts;
 using DesignPatterns.Behavioral.Memento;
+using DesignPatterns.Behavioral.State;
+using DesignPatterns.Behavioral.State.StudentsStates;
 using DesignPatterns.Behavioral.Strategy;
 using System;
 using System.Collections.Generic;
@@ -354,6 +356,8 @@ namespace DesignPatterns
             #region State
             //-------------------State------------------------------------
 
+            //Student student = new Student();
+            //student.SetUpInitialState(new RegularStudent(student));
 
             //Console.WriteLine();
 

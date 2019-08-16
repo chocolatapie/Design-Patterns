@@ -17,7 +17,7 @@ namespace DesignPatterns.Behavioral.State.StudentsStates
 
         public void PerformDailyActivity()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Having fun");
         }
     }
 }

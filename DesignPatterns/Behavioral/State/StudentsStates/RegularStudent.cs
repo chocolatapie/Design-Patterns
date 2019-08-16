@@ -17,7 +17,10 @@ namespace DesignPatterns.Behavioral.State.StudentsStates
 
         public void PerformDailyActivity()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Listening classes");
+            Console.WriteLine("Listening classes");
+            Console.WriteLine("Listening classes");
+            _thisStudent.ChangeState("Exams");
         }
     }
 }

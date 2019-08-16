@@ -20,7 +20,7 @@ namespace DesignPatterns.Behavioral.State.StudentsStates
             Console.WriteLine("Passing an exam");
             Console.WriteLine("Passing an exam");
             Console.WriteLine("Passing an exam");
-
+            _thisStudent.ChangeState("Holidays");
         }
     }
 }
