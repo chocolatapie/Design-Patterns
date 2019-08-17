@@ -64,6 +64,10 @@
     <Compile Include="Behavioral\Memento\Robot.cs" />
     <Compile Include="Behavioral\Memento\RobotMemento.cs" />
     <Compile Include="Behavioral\Memento\RobotsStatesManager.cs" />
+    <Compile Include="Behavioral\Observer\IPublisher.cs" />
+    <Compile Include="Behavioral\Observer\ISubscriber.cs" />
+    <Compile Include="Behavioral\Observer\LightBeacon.cs" />
+    <Compile Include="Behavioral\Observer\Ship.cs" />
     <Compile Include="Behavioral\State\IStudentState.cs" />
     <Compile Include="Behavioral\State\Student.cs" />
     <Compile Include="Behavioral\State\StudentsStates\RegularStudent.cs" />
@@ -146,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\Command\" />
-    <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Flyweight\" />

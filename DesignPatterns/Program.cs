@@ -2,6 +2,7 @@
 using DesignPatterns.Behavioral.Mediator.DepartureAirPorts;
 using DesignPatterns.Behavioral.Mediator.HubAirPorts;
 using DesignPatterns.Behavioral.Memento;
+using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Behavioral.State;
 using DesignPatterns.Behavioral.State.StudentsStates;
 using DesignPatterns.Behavioral.Strategy;
@@ -348,9 +349,18 @@ namespace DesignPatterns
 
             #region Observer
             //-------------------Observer---------------------------------
+            LightBeacon lightBeacon = new LightBeacon();
+            Ship ship1 = new Ship();
+            Ship ship2 = new Ship();
+            Ship ship3 = new Ship();
+            Ship ship4 = new Ship();
 
+            lightBeacon.Attach(ship1);
+            lightBeacon.Attach(ship2);
+            lightBeacon.Attach(ship3);
+            lightBeacon.Attach(ship4);
 
-            //Console.WriteLine();
+            Console.WriteLine();
 
             //------------------------------------------------------------
             #endregion
