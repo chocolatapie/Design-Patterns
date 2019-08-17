@@ -5,6 +5,8 @@ using DesignPatterns.Behavioral.Memento;
 using DesignPatterns.Behavioral.State;
 using DesignPatterns.Behavioral.State.StudentsStates;
 using DesignPatterns.Behavioral.Strategy;
+using DesignPatterns.Behavioral.Visitor;
+using DesignPatterns.Behavioral.Visitor.Hosts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -388,6 +390,20 @@ namespace DesignPatterns
             #region Visitor
             //-------------------Visitor----------------------------------
 
+            List<IHost> hosters = new List<IHost>();
+
+            //FurnitureFactory ffuctory = new FurnitureFactory();
+            //GroseryStore gStore = new GroseryStore();
+            //HouseHold hHodl = new HouseHold();
+            //InsuranceAgent iAgent = new InsuranceAgent();
+            //hosters.Add(ffuctory);
+            //hosters.Add(gStore);
+            //hosters.Add(hHodl);
+
+            //foreach (IHost hoster in hosters)
+            //{
+            //    hoster.RecieveVisitor(iAgent);
+            //}
 
             //Console.WriteLine();
 

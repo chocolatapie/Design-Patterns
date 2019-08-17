@@ -74,6 +74,13 @@
     <Compile Include="Behavioral\Strategy\Movers\OarsMover.cs" />
     <Compile Include="Behavioral\Strategy\Movers\SailMover.cs" />
     <Compile Include="Behavioral\Strategy\Vessel.cs" />
+    <Compile Include="Behavioral\Visitor\Hosts\FurnitureFactory.cs" />
+    <Compile Include="Behavioral\Visitor\Hosts\GroseryStore.cs" />
+    <Compile Include="Behavioral\Visitor\Hosts\HouseHold.cs" />
+    <Compile Include="Behavioral\Visitor\IHost.cs" />
+    <Compile Include="Behavioral\Visitor\IInsuranceBuyer.cs" />
+    <Compile Include="Behavioral\Visitor\InsuranceAgent.cs" />
+    <Compile Include="Behavioral\Visitor\IVisitor.cs" />
     <Compile Include="Creational\AbstractFactory\AircraftCarrier.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\AirBusFactory.cs" />
     <Compile Include="Creational\AbstractFactory\Factories\BoeingFactory.cs" />
@@ -141,7 +148,6 @@
     <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\TemplateMethod\" />
-    <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Flyweight\" />
   </ItemGroup>
