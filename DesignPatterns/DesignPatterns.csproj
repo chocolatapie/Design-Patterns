@@ -78,6 +78,9 @@
     <Compile Include="Behavioral\Strategy\Movers\OarsMover.cs" />
     <Compile Include="Behavioral\Strategy\Movers\SailMover.cs" />
     <Compile Include="Behavioral\Strategy\Vessel.cs" />
+    <Compile Include="Behavioral\TemplateMethod\AbstractFamilyMember.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Dad.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Son.cs" />
     <Compile Include="Behavioral\Visitor\Hosts\FurnitureFactory.cs" />
     <Compile Include="Behavioral\Visitor\Hosts\GroseryStore.cs" />
     <Compile Include="Behavioral\Visitor\Hosts\HouseHold.cs" />
@@ -150,7 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\Command\" />
-    <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Flyweight\" />
   </ItemGroup>

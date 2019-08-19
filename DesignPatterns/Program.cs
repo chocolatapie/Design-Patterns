@@ -1,4 +1,8 @@
-﻿using DesignPatterns.Behavioral.Mediator.ArrivalAirPorts;
+﻿using DesignPatterns.Behavioral.ChainResponsibility;
+using DesignPatterns.Behavioral.ChainResponsibility.MedPersonel;
+using DesignPatterns.Behavioral.Iterator.Collection;
+using DesignPatterns.Behavioral.Iterator.Iterators;
+using DesignPatterns.Behavioral.Mediator.ArrivalAirPorts;
 using DesignPatterns.Behavioral.Mediator.DepartureAirPorts;
 using DesignPatterns.Behavioral.Mediator.HubAirPorts;
 using DesignPatterns.Behavioral.Memento;
@@ -6,8 +10,26 @@ using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Behavioral.State;
 using DesignPatterns.Behavioral.State.StudentsStates;
 using DesignPatterns.Behavioral.Strategy;
+using DesignPatterns.Behavioral.TemplateMethod;
 using DesignPatterns.Behavioral.Visitor;
 using DesignPatterns.Behavioral.Visitor.Hosts;
+using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.AbstractFactory.Factories;
+using DesignPatterns.Creational.AbstractFactory.Interfaces;
+using DesignPatterns.Creational.Builder;
+using DesignPatterns.Creational.FactoryMethod;
+using DesignPatterns.Creational.Prototype;
+using DesignPatterns.Creational.Prototype.Models;
+using DesignPatterns.Creational.Singleton;
+using DesignPatterns.Structural.Adapter;
+using DesignPatterns.Structural.Adapter.Plugs;
+using DesignPatterns.Structural.Composite;
+using DesignPatterns.Structural.Composite.Models;
+using DesignPatterns.Structural.Decorator.ConcreteTypes;
+using DesignPatterns.Structural.Facade;
+using DesignPatterns.Structural.Facade.Interfaces;
+using DesignPatterns.Structural.Facade.Subsystems;
+using DesignPatterns.Structural.Proxy.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +45,7 @@ namespace DesignPatterns
             #region Factory Method
             //-------------------Factory Method---------------------------
 
+            //Console.WriteLine("---Factory Method---");
             //FactoriesExecutor factoriesExecutor = new FactoriesExecutor();
             //factoriesExecutor.ProduceCars();
             //foreach (IAutomobile auto in factoriesExecutor.Automobiles)
@@ -37,6 +60,7 @@ namespace DesignPatterns
             #region Singleton
             //-------------------Singleton--------------------------------
 
+            //Console.WriteLine("---Singleton---");
             //Universe uniwerse1 = Universe.GetUniverse();
             //Universe uniwerse2 = Universe.GetUniverse();
             //uniwerse1.WaitForHumanity();
@@ -49,9 +73,10 @@ namespace DesignPatterns
             #region Builder
             //-------------------Builder----------------------------------
 
+            //Console.WriteLine("---Builder---");
             //Pizzeria pizzeria = new Pizzeria();
             //Pizza margarita = pizzeria.MakePizza("Margarita");
-            //Console.WriteLine("This is "+margarita.Name + " pizza.");
+            //Console.WriteLine("This is " + margarita.Name + " pizza.");
             //Console.WriteLine("It has " + margarita.Price + " UAH price.");
             //Console.WriteLine("It weights " + margarita.Weight + " gramms.");
             //Console.WriteLine();
@@ -62,6 +87,7 @@ namespace DesignPatterns
             #region Prototype
             //-------------------Prototype--------------------------------
 
+            //Console.WriteLine("---Prototype---");
             //RomanArmy romanArmy = new RomanArmy();
             //Legion legion = new Legion();
             //legion.LegionName = "Legio Italica";
@@ -82,9 +108,9 @@ namespace DesignPatterns
             //romanArmy.RomanLegions.Add((Legion)legion.GetClone());
             //foreach (var legio in romanArmy.RomanLegions)
             //{
-            //    if(legio == legion)
+            //    if (legio == legion)
             //    {
-            //        Console.WriteLine("We are the original {0} legion! AveCeasar!",legio.LegionName);
+            //        Console.WriteLine("We are the original {0} legion! AveCeasar!", legio.LegionName);
             //    }
             //    else
             //    {
@@ -99,6 +125,7 @@ namespace DesignPatterns
             #region Abstract Factory
             //-------------------Abstract Factory-------------------------
 
+            //Console.WriteLine("---Abstract Factory---");
             //AirBusFactory factory1 = new AirBusFactory();
             //BoeingFactory factory2 = new BoeingFactory();
             //AircraftCarrier aircraft1 = new AircraftCarrier(factory1);
@@ -131,6 +158,7 @@ namespace DesignPatterns
             #region Adapter
             //-------------------Adapter----------------------------------
 
+            //Console.WriteLine("---Adapter---");
             //AmericanSocet americanSocet = new AmericanSocet();
             //EuroChargingPlug euroPlug = new EuroChargingPlug();
             //EuroToAmericanSocetAdapter plugAdapter = new EuroToAmericanSocetAdapter(euroPlug);
@@ -152,11 +180,13 @@ namespace DesignPatterns
             #region Composite
             //-------------------Composite--------------------------------
 
+            //Console.WriteLine("---Composite---");
+
             //Box MainBox = new Box();
             //Box InnerBox = new Box();
             //Box InnerInnerBox = new Box();
 
-            //Product product1 = new Product("firstP",100);
+            //Product product1 = new Product("firstP", 100);
             //Product product2 = new Product("secondP", 120);
             //Product product3 = new Product("thirdP", 120);
             //MainBox.AddProduct(product1);
@@ -190,6 +220,8 @@ namespace DesignPatterns
             #region Decorator
             //-------------------Decorator--------------------------------
 
+            //Console.WriteLine("---Decorator---");
+
             //Console.WriteLine("I`m JohnSnow and i have following armor: ");
             //ConcreteCharacter JohnSnow = new ConcreteCharacter(20);
             //Console.WriteLine(JohnSnow.CharacterBasicArmor);
@@ -206,6 +238,8 @@ namespace DesignPatterns
 
             #region Facade
             //-------------------Facade-----------------------------------
+
+            //Console.WriteLine("---Facade---");
 
             //IATMHardvareDirector hardvareDir = new ATMHardvare();
             //IBankMessageReciever reciever = new BankMessgeReciever();
@@ -229,6 +263,8 @@ namespace DesignPatterns
             #region Proxy
             //-------------------Proxy------------------------------------
 
+            //Console.WriteLine("---Proxy---");
+
             //TimeConsumingStorageService consumingService = new TimeConsumingStorageService();
             //ProxyService proxyService = new ProxyService(consumingService);
             //Console.WriteLine("Recieving object first time:");
@@ -246,7 +282,10 @@ namespace DesignPatterns
 
             #region ChainResponsibility
             //-------------------ChainResponsibility----------------------
-            //Patient MikeWithBrokenLeg = new Patient("Mike","broken leg bone");
+
+            //Console.WriteLine("---Chain of responsibility---");
+
+            //Patient MikeWithBrokenLeg = new Patient("Mike", "broken leg bone");
             //Patient BobWithDaltonism = new Patient("Bob", "Daltonism");
 
             //OrthopedicTraumatologist ortoped = new OrthopedicTraumatologist(null);
@@ -273,6 +312,8 @@ namespace DesignPatterns
 
             #region Iterator
             //-------------------Iterator---------------------------------
+
+            //Console.WriteLine("---Iterator---");
 
             //Console.WriteLine("Binary tree with custom iterator: ");
             //CustomBinaryTree tree = new CustomBinaryTree();
@@ -305,6 +346,9 @@ namespace DesignPatterns
 
             #region Mediator
             //-------------------Mediator---------------------------------
+
+            //Console.WriteLine("---Mediator---");
+
             //NYCAirport nYCAirport = new NYCAirport();
             //KievAirport kievAirport = new KievAirport();
 
@@ -324,6 +368,8 @@ namespace DesignPatterns
 
             #region Memento
             //-------------------Memento---------------------------------
+
+            //Console.WriteLine("---Memento---");
 
             //Robot robot = new Robot("stay", "stay");
             //robot.Move("forward", "stay");
@@ -349,24 +395,29 @@ namespace DesignPatterns
 
             #region Observer
             //-------------------Observer---------------------------------
-            LightBeacon lightBeacon = new LightBeacon();
-            Ship ship1 = new Ship();
-            Ship ship2 = new Ship();
-            Ship ship3 = new Ship();
-            Ship ship4 = new Ship();
 
-            lightBeacon.Attach(ship1);
-            lightBeacon.Attach(ship2);
-            lightBeacon.Attach(ship3);
-            lightBeacon.Attach(ship4);
+            //Console.WriteLine("---Observer---");
 
-            Console.WriteLine();
+            //LightBeacon lightBeacon = new LightBeacon();
+            //Ship ship1 = new Ship();
+            //Ship ship2 = new Ship();
+            //Ship ship3 = new Ship();
+            //Ship ship4 = new Ship();
+
+            //lightBeacon.Attach(ship1);
+            //lightBeacon.Attach(ship2);
+            //lightBeacon.Attach(ship3);
+            //lightBeacon.Attach(ship4);
+
+            //Console.WriteLine();
 
             //------------------------------------------------------------
             #endregion
 
             #region State
             //-------------------State------------------------------------
+
+            //Console.WriteLine("---State---");
 
             //Student student = new Student();
             //student.SetUpInitialState(new RegularStudent(student));
@@ -378,6 +429,8 @@ namespace DesignPatterns
 
             #region Strategy
             //-------------------Strategy---------------------------------
+
+            //Console.WriteLine("---Strategy---");
 
             //Vessel yacht = new Vessel("Sails");
             //yacht.ChangeContext("Oars");
@@ -391,6 +444,13 @@ namespace DesignPatterns
             #region TemplateMethod
             //-------------------TemplateMethod---------------------------
 
+            //Console.WriteLine("---TemplateMethod---");
+            //Dad dad = new Dad();
+            //Son son = new Son();
+
+            //son.PerformDailyActivities();
+            //Console.WriteLine();
+            //dad.PerformDailyActivities();
 
             //Console.WriteLine();
 
@@ -400,7 +460,9 @@ namespace DesignPatterns
             #region Visitor
             //-------------------Visitor----------------------------------
 
-            List<IHost> hosters = new List<IHost>();
+            //Console.WriteLine("---Visitor---");
+
+            //List<IHost> hosters = new List<IHost>();
 
             //FurnitureFactory ffuctory = new FurnitureFactory();
             //GroseryStore gStore = new GroseryStore();
