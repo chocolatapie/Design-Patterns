@@ -1,5 +1,7 @@
 ﻿using DesignPatterns.Behavioral.ChainResponsibility;
 using DesignPatterns.Behavioral.ChainResponsibility.MedPersonel;
+using DesignPatterns.Behavioral.Command;
+using DesignPatterns.Behavioral.Command.Commands;
 using DesignPatterns.Behavioral.Iterator.Collection;
 using DesignPatterns.Behavioral.Iterator.Iterators;
 using DesignPatterns.Behavioral.Mediator.ArrivalAirPorts;
@@ -304,6 +306,12 @@ namespace DesignPatterns
             #region Command
             //-------------------Command---------------------------------
 
+            //Console.WriteLine("---Command---");
+            //Soldier soldier = new Soldier();
+            //Officer officer = new Officer();
+            //officer.InitializeCurrentSoldier(soldier);
+            //officer.OrderMoveForward();
+            //officer.OrederFire();
 
             //Console.WriteLine();
 

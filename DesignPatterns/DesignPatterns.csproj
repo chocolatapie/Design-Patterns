@@ -48,6 +48,11 @@
     <Compile Include="Behavioral\ChainResponsibility\MedPersonel\Therapist.cs" />
     <Compile Include="Behavioral\ChainResponsibility\MedPersonel\Traumatologist.cs" />
     <Compile Include="Behavioral\ChainResponsibility\Patient.cs" />
+    <Compile Include="Behavioral\Command\Commands\FireArmsCommand.cs" />
+    <Compile Include="Behavioral\Command\Commands\MoveForwardCommand.cs" />
+    <Compile Include="Behavioral\Command\ICommand.cs" />
+    <Compile Include="Behavioral\Command\Officer.cs" />
+    <Compile Include="Behavioral\Command\Soldier.cs" />
     <Compile Include="Behavioral\Iterator\Collection\CustomBinaryTree.cs" />
     <Compile Include="Behavioral\Iterator\Collection\TreeNode.cs" />
     <Compile Include="Behavioral\Iterator\Iterators\AbstractIterator.cs" />
@@ -152,7 +157,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral\Command\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Flyweight\" />
   </ItemGroup>
