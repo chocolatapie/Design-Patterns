@@ -130,6 +130,12 @@
     <Compile Include="Structural\Adapter\Plugs\EuroChargingPlug.cs" />
     <Compile Include="Structural\Adapter\Plugs\EuroToAmericanSocetAdapter.cs" />
     <Compile Include="Structural\Adapter\Interfaces\IAmericanPlug.cs" />
+    <Compile Include="Structural\Bridge\BankAccount.cs" />
+    <Compile Include="Structural\Bridge\Banks\Agricole.cs" />
+    <Compile Include="Structural\Bridge\Banks\BankOfAmerica.cs" />
+    <Compile Include="Structural\Bridge\Banks\OTP.cs" />
+    <Compile Include="Structural\Bridge\Client.cs" />
+    <Compile Include="Structural\Bridge\IBank.cs" />
     <Compile Include="Structural\Composite\Interfaces\IBox.cs" />
     <Compile Include="Structural\Composite\Interfaces\IProduct.cs" />
     <Compile Include="Structural\Composite\Models\Box.cs" />
@@ -157,7 +163,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Flyweight\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

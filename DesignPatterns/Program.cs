@@ -25,6 +25,8 @@ using DesignPatterns.Creational.Prototype.Models;
 using DesignPatterns.Creational.Singleton;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Adapter.Plugs;
+using DesignPatterns.Structural.Bridge;
+using DesignPatterns.Structural.Bridge.Banks;
 using DesignPatterns.Structural.Composite;
 using DesignPatterns.Structural.Composite.Models;
 using DesignPatterns.Structural.Decorator.ConcreteTypes;
@@ -172,7 +174,13 @@ namespace DesignPatterns
 
             #region Bridge
             //-------------------Bridge-----------------------------------
+            //Console.WriteLine("---Bridge---");
+            //Client client = new Client();
+            //OTP otpBank = new OTP();
+            //client.CreateAccountInBank(otpBank);
 
+            //client.BankAccount.Replenish();
+            //client.BankAccount.Withdraw();
 
             //Console.WriteLine();
 

@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DesignPatterns.Structural.Bridge.Banks
+{
+    class Agricole : IBank
+    {
+        public void ReplenishBalance()
+        {
+            Console.WriteLine("It is Agricole bank! You are replenishing your balance!");
+        }
+
+        public void Withdraw()
+        {
+            Console.WriteLine("It is Agricole bank! You are withdrawing your money!");
+        }
+    }
+}
