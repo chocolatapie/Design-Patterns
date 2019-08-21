@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Behavioral.ChainResponsibility;
+﻿#region Usings
+using DesignPatterns.Behavioral.ChainResponsibility;
 using DesignPatterns.Behavioral.ChainResponsibility.MedPersonel;
 using DesignPatterns.Behavioral.Command;
 using DesignPatterns.Behavioral.Command.Commands;
@@ -37,6 +38,7 @@ using DesignPatterns.Structural.Proxy.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+#endregion
 
 namespace DesignPatterns
 {
@@ -44,6 +46,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Greetings! Uncomment section with wanted pattern!");
+
             #region Creational
 
             #region Factory Method
