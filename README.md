@@ -42,22 +42,37 @@ Implementation of main oop design patterns in C# language:
 
 <details>
   <summary>Adapter</summary>
+  
+  ![Adapter](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Adapter.jpg)
+  
 </details>
 
 <details>
   <summary>Bridge</summary>
+  
+  ![Bridge](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Bridge.jpg)
+  
 </details>
 
 <details>
   <summary>Composite</summary>
+  
+  ![Composite](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Composite.jpg)
+  
 </details>
 
 <details>
   <summary>Decorator</summary>
+  
+  ![Decorator](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Decorator.jpg)
+  
 </details>
 
 <details>
   <summary>Facade</summary>
+  
+  ![Facade](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Facade.jpg)
+  
 </details>
 
 <details>
@@ -66,6 +81,9 @@ Implementation of main oop design patterns in C# language:
 
 <details>
   <summary>Proxy</summary>
+  
+  ![Proxy](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Proxy.jpg)
+  
 </details>
 
 ### Behavioral patterns
