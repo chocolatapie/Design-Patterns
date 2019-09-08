@@ -2,11 +2,26 @@
 Implementation of main oop design patterns in C# language:
 
 ### Creational patterns
-* Factory method
-* Builder
-* Singleton
-* Prototype
-* Abstract factory
+
+<details>
+  <summary>Factory method</summary>
+</details>
+
+<details>
+  <summary>Builder</summary>
+</details>
+
+<details>
+  <summary>Singleton</summary>
+</details>
+
+<details>
+  <summary>Prototype</summary>
+</details>
+
+<details>
+  <summary>Abstract factory</summary>
+</details>
 
 ### Structural patterns
 * Adapter
