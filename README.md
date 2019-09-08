@@ -12,18 +12,30 @@ Implementation of main oop design patterns in C# language:
 
 <details>
   <summary>Builder</summary>
+  
+  ![Builder](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Builder.jpg)
+  
 </details>
 
 <details>
   <summary>Singleton</summary>
+  
+  ![Singleton](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Singleton.jpg)
+  
 </details>
 
 <details>
   <summary>Prototype</summary>
+  
+  ![Prototype](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/Prototype.jpg)
+  
 </details>
 
 <details>
   <summary>Abstract factory</summary>
+  
+  ![Abstract factory](https://github.com/chocolatapie/Design-Patterns/blob/master/Images/AbstractFactory.jpg)
+  
 </details>
 
 ### Structural patterns
