@@ -5,6 +5,7 @@ Implementation of main oop design patterns in C# language:
 
 <details>
   <summary>Factory method</summary>
+  ![Factory method](https://github.com/chocolatapie/Design-Patterns/blob/master/FactoryMethod.jpg)
 </details>
 
 <details>
