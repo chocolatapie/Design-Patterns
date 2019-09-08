@@ -68,7 +68,7 @@ Implementation of main oop design patterns in C# language:
 </details>
 
 <details>
-  <summary>Mediator/summary>
+  <summary>Mediator</summary>
 </details>
 
 <details>
