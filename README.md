@@ -8,6 +8,8 @@ Implementation of main oop design patterns in C# language:
   ![Factory method] (https://github.com/chocolatapie/Design-Patterns/blob/master/FactoryMethod.PNG)
 </details>
 
+![Factory method] (https://github.com/chocolatapie/Design-Patterns/blob/master/FactoryMethod.PNG)
+
 <details>
   <summary>Builder</summary>
 </details>
