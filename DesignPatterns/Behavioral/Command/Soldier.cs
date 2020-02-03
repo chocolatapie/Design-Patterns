@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Behavioral.Command
 {
@@ -10,7 +6,7 @@ namespace DesignPatterns.Behavioral.Command
     {
         public void FireArms()
         {
-            Console.WriteLine("Yes sir! I`m fireing from my gun!");
+            Console.WriteLine("Yes sir! I do fire from my gun!");
         }
 
         public void MoveForward()

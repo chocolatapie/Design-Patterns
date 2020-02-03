@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DesignPatterns.Structural.Proxy.Interfaces;
 using DesignPatterns.Structural.Proxy.Models;
 
 namespace DesignPatterns.Structural.Proxy.Services

@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.Structural.Proxy.Models;
 
-namespace DesignPatterns.Structural.Proxy
+namespace DesignPatterns.Structural.Proxy.Interfaces
 {
     public interface IStorageService
     {
