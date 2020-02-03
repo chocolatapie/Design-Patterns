@@ -7,15 +7,12 @@
         public bool TryToCure(string disease)
         {
             if (disease == "flue")
-            {
                 return true;
-            }
             else
             {
                 if (MoreSeniorMedGuy == null)
-                {
                     return false;
-                }
+
                 MoreSeniorMedGuy.TryToCure(disease);
             }
             return false;
